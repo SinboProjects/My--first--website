@@ -1,95 +1,126 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Layout</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: blue; /* Page background */
-      color: white;
-    }
-
-    /* Navigation bar */
-    .navbar {
-      background-color: darkblue;
-      padding: 10px;
-      text-align: left;
-    }
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .navbar a:hover {
-      text-decoration: underline;
-    }
-
-    /* Table section */
-    .content {
-      padding: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: white;
-      color: black;
-    }
-
-    table, th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: center;
-    }
-
-    /* Footer */
-    .footer {
-      background-color: yellow;
-      color: black;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .blue-section {
+      background-color: lightblue;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .blue-section div {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin: 20px;
+    }
+    img {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 250px;
+      border: 3px solid #555;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    a {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      color: darkred;
+      text-decoration: none;
+      margin: 20px;
+    }
+    a:hover {
+      color: blue;
+    }
+    footer {
+      background-color: yellow;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Heading -->
+  <header>
+    <h1>Welcome to My First Website</h1>
+  </header>
 
-  <!-- Navigation -->
-  <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-  </div>
+  <!-- Blue section with Home and Above -->
+  <div class="blue-section">
+    <div>Home</div>
+    <div>Above</div>
+  </div>
 
-  <!-- Content -->
-  <div class="content">
-    <h2>Table Section</h2>
-    <table>
-      <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
-      </tr>
-      <tr>
-        <td>Row 1</td>
-        <td>Row 1</td>
-      </tr>
-      <tr>
-        <td>Row 2</td>
-        <td>Row 2</td>
-      </tr>
-    </table>
-  </div>
+  <!-- Paragraph -->
+  <p>
+    This is a simple webpage created for my school assignment.  
+    It shows a heading, paragraph, image, link, table, and footer.
+  </p>
 
-  <!-- Footer -->
-  <div class="footer">
-    Footer
-  </div>
+  <!-- Image -->
+  <img src="https://via.placeholder.com/250" alt="Sample Image">
 
+  <!-- Link -->
+  <a href="https://github.com/SinboProjects/My--first--website" target="_blank">
+    Visit my GitHub Repository
+  </a>
+
+  <!-- Table -->
+  <table>
+    <tr>
+      <th>Course</th>
+      <th>Teacher</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>Math</td>
+      <td>Mr. A</td>
+      <td>8:00 AM</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>Mrs. B</td>
+      <td>10:00 AM</td>
+    </tr>
+    <tr>
+      <td>IT</td>
+      <td>Mr. C</td>
+      <td>1:00 PM</td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 My First Website | All Rights Reserved
+  </footer>
 </body>
-  </html>
+</html>
